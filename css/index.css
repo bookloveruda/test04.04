@@ -1,0 +1,151 @@
+@charset "utf-8";
+@import url(./common/reset.css);
+@import url(./common/header.css);
+@import url(./common/footer.css);
+
+#wrap{
+  width: 100vw;
+  height: 100vh;
+  /* background-color: #0f0; */
+  background-color: #000;
+}
+
+.container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+.container .sections{}
+
+/* 11111111 */
+.container .sections .section.sec1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(96, 197, 255); */
+  margin: 50px 0;
+}
+.container .sections .section.sec1 .sec-con{
+  flex: 0 1 1400px;
+  height: 400px;
+  background-color: #000;
+  position: relative;
+  overflow: hidden;
+  /* border: 3px solid rgb(255, 55, 0); */
+}
+.container .sections .section.sec1 .sec-con .gallery{
+  width: 500%;
+  height: inherit;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+}
+.container .sections .section.sec1 .sec-con .gallery>ul{
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+.container .sections .section.sec1 .sec-con .gallery>ul>li{
+  flex: 1;
+  height: inherit;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .sections .section.sec1 .sec-con .center-btn{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid #f0f; */
+  padding: 0 5%;
+  box-sizing: border-box;
+  /* 위 두 개를 함께 적어야 양끝간격 띄어짐 */
+}
+.container .sections .section.sec1 .sec-con .center-btn span.arrow{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color:#fff;
+}
+.container .sections .section.sec1 .sec-con .center-btn span.arrow:hover{
+  background-color: #f00;
+}
+.container .sections .section.sec1 .sec-con .bcon{
+  width: 100%;
+  height: auto;
+  /* border: 3px solid #0f0; */
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  bottom: 5%;
+  display: flex;
+  justify-content: center;
+}
+.container .sections .section.sec1 .sec-con .bcon .items{
+  width: 20%;
+  height: auto;
+  /* border: 3px solid #ff0; */
+}
+.container .sections .section.sec1 .sec-con .bcon .items>ul{
+  display: flex;
+  justify-content: space-between;
+}
+.container .sections .section.sec1 .sec-con .bcon .items>ul>li{
+  width: 15px;
+  height: 15px;
+  /* border: 1px solid #0ff; */
+  background-color: #fff;
+  border-radius: 50%;
+}
+.container .sections .section.sec1 .sec-con .bcon .items>ul>li:hover{
+  background-color: #f00;
+  cursor: pointer;
+}
+.gallery-animation{
+  transition: all 0.5s;
+}
+
+
+/* 222222222 */
+.container .sections .section.sec2{
+  width: 100%;
+  height: auto;
+  /* background-color: #ff0; */
+  background-color: #000;
+  margin: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .sections .section.sec2 .sec-con{
+  flex: 0 1 1200px;
+  /* border: 1px solid; */
+  box-sizing: border-box;
+}
+.container .sections .section.sec2 .sec-con>ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+.container .sections .section.sec2 .sec-con>ul>li{
+  flex: 0 1 21%;
+  margin: 3% 0;
+}
+.container .sections .section.sec2 .sec-con>ul>li img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.container .sections .section.sec2 .sec-con>ul>li img:hover{
+  opacity: 0.5;
+}
